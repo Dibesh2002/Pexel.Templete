@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background-image: linear-gradient(rgb(255, 255, 255),rgba(2, 2, 2, 0.192),rgb(255, 255, 255));
+  /* background-image: url('./pexels-david-selbert-8100784.jpg'); */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* position: fixed; */
+}
+  
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery a {
+  margin: 20px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  /* width: 400px;
+  height: 300px; */
+  width: 400px;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.gallery a:hover {
+  transform: scale(1.08);
+}
+
+.gallery a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery a:hover::after {
+  content: "Download";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.search-container input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  margin-right: -5px;
+}
+
+.search-container button {
+  color: aliceblue;
+  padding: 10px;
+  background: #7c2f11;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.search-container button:hover {
+  background: #b1b1b1;
+}
+
+.search-container input[type=text]:focus {
+  outline: none;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-container input[type=text]::placeholder {
+  color: #ccc;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery a {
+    width: 100%;
+  }
+}
+
+.footer.link{
+  color: rgb(56, 44, 44);
+}
+
+
+/* service */
+
+/* Center the main title */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+ /* navbar */
+ .logo-anim{
+  transition: all ls;
+}
+
+.logo-anim:hover{
+  transform: rotate(-0.04turn) scale(1.1)
+}
+
+.brand-anim{
+  transition: all ls;
+}
+
+.brand-anim:hover{
+  transform: scale(1.1)
+}
+
+/* .footer.links{
+
+  text-decoration: none;
+  color: black;
+}  */
+
+.link-anim{
+  transition: all ls;
+}
+
+.link-anim:hover{
+  transform: scale(1.1);
+  background-color: darkred;
+  transition: 0.2s;
+}
+
+.img-anim{
+  transition: all ls;
+}
+
+.img-anim:hover{
+  transform: scale(1.05)
+}
+
+.hello-anim{
+  transition: all ls;
+}
+
+.hello-anim:hover{
+  transform: scale(1.05)  /* rotate(-0.01turn) */
+}
